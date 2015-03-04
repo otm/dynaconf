@@ -1,20 +1,16 @@
-dynaconf
-========
+# dynaconf
 
 dynaconf reads environment variables and generates configuration files from templates. Templates are expressed in the Go template format. See http://golang.org/pkg/text/template/ for more information.
 
-Installation
-------------
+## Installation
 
 go get github.com/otm/dynaconf
 
-Build/Install
--------------
+## Build/Install
 
 go install github.com/otm/dynaconf
 
-Usage
------
+## Usage
 
 dynaconf [options] -template template:outfile\[:actions]
 
@@ -22,21 +18,20 @@ dynaconf [options] -template template:outfile\[:actions]
 
 Actions can be one of the following:
 
--	validate=json - validates output as JSON
--	exec=command - run command after the configuration is created
+*	validate=json - validates output as JSON
+*	exec=command - run command after the configuration is created
 
 ### Options
 
 All options are optionally except for **template**
 
--	dry-run=false: Output result to stdout instead of files
--	log-files=false: Log files written to disk
--	param=[]: Parameters to use when generating configuration
--	template=[]: The template definition to use
--	version=false: Show version and exit
+*	dry-run=false: Output result to stdout instead of files
+*	log-files=false: Log files written to disk
+*	param=[]: Parameters to use when generating configuration
+*	template=[]: The template definition to use
+*	version=false: Show version and exit
 
-Examples
---------
+## Examples
 
 ### Render a template
 
