@@ -1,0 +1,6 @@
+{
+  "static": "string",
+  "number": {{.year}},
+  "name": "{{.name}}",
+  "version": "{{ or .version "-"}}"
+}
